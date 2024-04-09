@@ -1,0 +1,10 @@
+def descending_order(num):
+    # Bust a move right here
+    nums = []
+    new_num = ""
+    for value in str(num):
+        nums.append(int(value))
+        nums.sort(reverse=True)
+    return(int("".join(str(item) for item in nums)))
+         
+print(descending_order(12345))
